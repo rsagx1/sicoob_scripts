@@ -92,21 +92,6 @@ window.onload = function () {
       case "23120886":
         skillFormatada = "23120886 - Sipag 2.0 Suporte Tecnico";
         break;
-      case "25166191":
-        skillFormatada = "25166191 - Sipag 2.0 Reativacao de Cadastro";
-        break;
-      case "25166192":
-        skillFormatada = "25166192 - Sipag 2.0 Habilitar Servico Antecipacao";
-        break;
-      case "23121572":
-        skillFormatada = "23121572 - Sipag 2.0 Retencao";
-        break;
-      case "23121571":
-        skillFormatada = "23121571 - Sipag 1.0 Retencao";
-        break;
-      case "23120887":
-        skillFormatada = "23120887 - Sipag Erro Validacao URA";
-        break;
       default:
         skillFormatada = " ";
         break;
@@ -132,21 +117,6 @@ function showPopup() {
     switch (opTransf) {
       case "23120886":
         transfSkill = "23120886 - Sipag 2.0 Suporte Tecnico";
-        break;
-      case "25166191":
-        transfSkill = "25166191 - Sipag 2.0 Reativacao de Cadastro";
-        break;
-      case "25166192":
-        transfSkill = "25166192 - Sipag 2.0 Habilitar Servico Antecipacao";
-        break;
-      case "23121572":
-        transfSkill = "23121572 - Sipag 2.0 Retencao";
-        break;
-      case "23121571":
-        transfSkill = "23121571 - Sipag 1.0 Retencao";
-        break;
-      case "23120887":
-        transfSkill = "23120887 - Sipag Erro Validacao URA";
         break;
       default:
         transfSkill = " ";
@@ -201,11 +171,6 @@ document.addEventListener('DOMContentLoaded', function() {
 const allOptions = [
   { value: "", text: "Lista de Transferência:" },
   { value: "23120886", text: "23120886 - Sipag 2.0 Suporte Tecnico" },
-  { value: "25166191", text: "25166191 - Sipag 2.0 Reativacao de Cadastro" },
-  { value: "25166192", text: "25166192 - Sipag 2.0 Habilitar Servico Antecipacao" },
-  { value: "23121572", text: "23121572 - Sipag 2.0 Retencao" },
-  { value: "23121571", text: "23121571 - Sipag 1.0 Retencao" },
-  { value: "23120887", text: "23120887 - Sipag Erro Validacao URA" },
   { value: "PUC", text: "URA PUC" }
 ];
 
