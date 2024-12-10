@@ -119,9 +119,6 @@ window.onload = function () {
       case "23120889":
         skillFormatada = "23120889 - Sipag 1.0 Disc Sipag";
         break;
-      case "23120887":
-        skillFormatada = "23120887 - Sipag Erro Validação URA";
-        break;
       default:
         skillFormatada = " ";
         break;
@@ -174,9 +171,6 @@ function showPopup() {
         break;
       case "23120889":
         transfSkill = "23120889 - Sipag 1.0 Disc Sipag";
-        break;
-      case "23120887":
-        transfSkill = "23120887 - Sipag Erro Validação URA";
         break;
       default:
         transfSkill = " ";
@@ -240,7 +234,6 @@ const allOptions = [
   { value: "23120878", text: "23120878 - Sipag 1.0 Portal" },
   { value: "23121571", text: "23121571 - Sipag 1.0 Retencao" },
   { value: "23120889", text: "23120889 - Sipag 1.0 Disc Sipag" },
-  { value: "23120887", text: "23120887 - Sipag Erro Validação URA" },
   { value: "PUC", text: "URA PUC" }
 ];
 
