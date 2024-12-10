@@ -119,6 +119,9 @@ window.onload = function () {
       case "23120889":
         skillFormatada = "23120889 - Sipag 1.0 Disc Sipag";
         break;
+      case "23120887":
+        skillFormatada = "23120887 - Sipag Erro Validação URA";
+        break;
       default:
         skillFormatada = " ";
         break;
