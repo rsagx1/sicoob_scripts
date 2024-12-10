@@ -116,9 +116,6 @@ window.onload = function () {
       case "25166191":
         skillFormatada = "25166191 - Sipag 2.0 Reativacao de Cadastro";
         break;
-      case "23120887":
-        skillFormatada = "23120887 - Sipag Erro Validação URA";
-        break;
       default:
         skillFormatada = " ";
         break;
@@ -168,9 +165,6 @@ function showPopup() {
         break;
       case "25166191":
         transfSkill = "25166191 - Sipag 2.0 Reativacao de Cadastro";
-        break;
-      case "23120887":
-        transfSkill = "23120887 - Sipag Erro Validação URA";
         break;
       default:
         transfSkill = " ";
@@ -233,7 +227,6 @@ const allOptions = [
   { value: "23120886", text: "23120886 - Sipag 2.0 Suporte Tecnico" },
   { value: "23121572", text: "23121572 - Sipag 2.0 Retencao" },
   { value: "25166191", text: "25166191 - Sipag 2.0 Reativacao de Cadastro" },
-  { value: "23120887", text: "23120887 - Sipag Erro Validação URA" },
   { value: "PUC", text: "URA PUC" }
 ];
 
