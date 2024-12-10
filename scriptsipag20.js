@@ -116,6 +116,9 @@ window.onload = function () {
       case "25166191":
         skillFormatada = "25166191 - Sipag 2.0 Reativacao de Cadastro";
         break;
+      case "23120887":
+        skillFormatada = "23120887 - Sipag Erro Validação URA";
+        break;
       default:
         skillFormatada = " ";
         break;
