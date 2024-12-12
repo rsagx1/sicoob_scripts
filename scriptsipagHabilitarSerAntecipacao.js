@@ -116,6 +116,12 @@ window.onload = function () {
       case "25166191":
         skillFormatada = "25166191 - Sipag 2.0 Reativacao de Cadastro";
         break;
+      case "25166192":
+        skillFormatada = "25166192 - Sipag 2.0 Habilitar Servico Antecipacao";
+        break;
+      case "23120887":
+        skillFormatada = "23120887 - Sipag Erro Validação URA";
+        break;
       default:
         skillFormatada = " ";
         break;
@@ -165,6 +171,9 @@ function showPopup() {
         break;
       case "25166191":
         transfSkill = "25166191 - Sipag 2.0 Reativacao de Cadastro";
+        break;
+      case "25166192":
+        transfSkill = "25166192 - Sipag 2.0 Habilitar Servico Antecipacao";
         break;
       default:
         transfSkill = " ";
@@ -218,15 +227,8 @@ document.addEventListener('DOMContentLoaded', function() {
 // Opções para o select
 const allOptions = [
   { value: "", text: "Lista de Transferência:" },
-  { value: "23120880", text: "23120880 - Sipag 2.0 App" },
-  { value: "23120881", text: "23120881 - Sipag 2.0 Atendente" },
-  { value: "23120882", text: "23120882 - Sipag 2.0 Cadastro" },
-  { value: "23120883", text: "23120883 - Sipag 2.0 Financeiro" },
-  { value: "23120884", text: "23120884 - Sipag 2.0 Logistica" },
-  { value: "23120885", text: "23120885 - Sipag 2.0 Relatorio" },
   { value: "23120886", text: "23120886 - Sipag 2.0 Suporte Tecnico" },
-  { value: "23121572", text: "23121572 - Sipag 2.0 Retencao" },
-  { value: "25166191", text: "25166191 - Sipag 2.0 Reativacao de Cadastro" },
+  { value: "25166192", text: "25166192 - Sipag 2.0 Habilitar Servico Antecipacao" },
   { value: "PUC", text: "URA PUC" }
 ];
 
