@@ -202,7 +202,7 @@ const allOptions = [
   { value: "25166192", text: "25166192 - Sipag 2.0 Habilitar Servico Antecipacao" },
   { value: "23121572", text: "23121572 - Sipag 2.0 Retencao" },
   { value: "23121571", text: "23121571 - Sipag 1.0 Retencao" },
-  { value: "PUC", text: "URA PUC" }
+  { value: "FD", text: "URA FD" }
 ];
 
 // Obter o valor do input SkillT
