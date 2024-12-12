@@ -89,12 +89,6 @@ window.onload = function () {
     let skillOrigem = skillOrigemElement.value;
 
     switch (skillOrigem) {
-      case "23120886":
-        skillFormatada = "23120886 - Sipag 2.0 Suporte Tecnico";
-        break;
-      case "25166191":
-        skillFormatada = "25166191 - Sipag 2.0 Reativacao de Cadastro";
-        break;
       case "23120880":
         skillFormatada = "23120880 - Sipag 2.0 App";
         break;
@@ -113,8 +107,14 @@ window.onload = function () {
       case "23120885":
         skillFormatada = "23120885 - Sipag 2.0 Relatorio";
         break;
+      case "23120886":
+        skillFormatada = "23120886 - Sipag 2.0 Suporte Tecnico";
+        break;
       case "23121572":
         skillFormatada = "23121572 - Sipag 2.0 Retencao";
+        break;
+      case "25166191":
+        skillFormatada = "25166191 - Sipag 2.0 Reativacao de Cadastro";
         break;
       case "25166192":
         skillFormatada = "25166192 - Sipag 2.0 Habilitar Servico Antecipacao";
@@ -145,8 +145,35 @@ function showPopup() {
     let transfSkill = "";
 
     switch (opTransf) {
+      case "23120880":
+        transfSkill = "23120880 - Sipag 2.0 App";
+        break;
+      case "23120881":
+        transfSkill = "23120881 - Sipag 2.0 Atendente";
+        break;
+      case "23120882":
+        transfSkill = "23120882 - Sipag 2.0 Cadastro";
+        break;
+      case "23120883":
+        transfSkill = "23120883 - Sipag 2.0 Financeiro";
+        break;
+      case "23120884":
+        transfSkill = "23120884 - Sipag 2.0 Logistica";
+        break;
+      case "23120885":
+        transfSkill = "23120885 - Sipag 2.0 Relatorio";
+        break;
       case "23120886":
         transfSkill = "23120886 - Sipag 2.0 Suporte Tecnico";
+        break;
+      case "23121572":
+        transfSkill = "23121572 - Sipag 2.0 Retencao";
+        break;
+      case "25166191":
+        transfSkill = "25166191 - Sipag 2.0 Reativacao de Cadastro";
+        break;
+      case "25166192":
+        transfSkill = "25166192 - Sipag 2.0 Habilitar Servico Antecipacao";
         break;
       default:
         transfSkill = " ";
