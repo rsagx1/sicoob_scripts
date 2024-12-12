@@ -95,10 +95,7 @@ window.onload = function () {
       case "25166191":
         skillFormatada = "25166191 - Sipag 2.0 Reativacao de Cadastro";
         break;
-      default:
-        skillFormatada = " ";
-        break;
-              case "23120880":
+      case "23120880":
         skillFormatada = "23120880 - Sipag 2.0 App";
         break;
       case "23120881":
