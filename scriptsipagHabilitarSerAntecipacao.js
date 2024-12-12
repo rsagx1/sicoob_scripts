@@ -98,6 +98,36 @@ window.onload = function () {
       default:
         skillFormatada = " ";
         break;
+              case "23120880":
+        skillFormatada = "23120880 - Sipag 2.0 App";
+        break;
+      case "23120881":
+        skillFormatada = "23120881 - Sipag 2.0 Atendente";
+        break;
+      case "23120882":
+        skillFormatada = "23120882 - Sipag 2.0 Cadastro";
+        break;
+      case "23120883":
+        skillFormatada = "23120883 - Sipag 2.0 Financeiro";
+        break;
+      case "23120884":
+        skillFormatada = "23120884 - Sipag 2.0 Logistica";
+        break;
+      case "23120885":
+        skillFormatada = "23120885 - Sipag 2.0 Relatorio";
+        break;
+      case "23121572":
+        skillFormatada = "23121572 - Sipag 2.0 Retencao";
+        break;
+      case "25166192":
+        skillFormatada = "25166192 - Sipag 2.0 Habilitar Servico Antecipacao";
+        break;
+      case "23120887":
+        skillFormatada = "23120887 - Sipag Erro Validação URA";
+        break;
+      default:
+        skillFormatada = " ";
+        break;
     }
 
     const origemElement = document.getElementById('Origem');
