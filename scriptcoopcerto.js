@@ -99,7 +99,7 @@ window.onload = function () {
         skillFormatada = "25166187 - Coopcerto Cotacao";
         break;
       case "25166175":
-        skillFormatada = "25166175 - TER Coopcerto Portador Emergencial";
+        skillFormatada = "25166175 - TER Coopcerto Portador";
         break;
       default:
         skillFormatada = " ";
@@ -134,7 +134,7 @@ function showPopup() {
         transfSkill = "25166187 - Coopcerto Cotacao";
         break;
       case "25166175":
-        transfSkill = "25166175 - TER Coopcerto Portador Emergencial";
+        transfSkill = "25166175 - TER Coopcerto Portador";
         break;
      default:
         transfSkill = " ";
@@ -191,7 +191,7 @@ const allOptions = [
   { value: "25166189", text: "25166189 - Coopcerto Retencao" },
   { value: "25166188", text: "25166188 - Coopcerto Empresa" },
   { value: "25166187", text: "25166187 - Coopcerto Cotacao" },
-  { value: "25166175", text: "25166175 - TER Coopcerto Portador Emergencial" },
+  { value: "25166175", text: "25166175 - TER Coopcerto Portador" },
   { value: "PUC", text: "URA PUC" }
 ];
 
