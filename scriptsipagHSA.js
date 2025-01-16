@@ -175,6 +175,9 @@ function showPopup() {
       case "25166192":
         transfSkill = "25166192 - Sipag 2.0 Habilitar Servico Antecipacao";
         break;
+      case "PUC":
+        transfSkill = "URA PUC";
+        break;
       default:
         transfSkill = " ";
         break;
