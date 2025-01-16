@@ -175,6 +175,9 @@ function showPopup() {
       case "23120889":
         transfSkill = "23120889 - Sipag 1.0 Disc Sipag";
         break;
+      case "PUC":
+        transfSkill = "URA PUC";
+        break;
       default:
         transfSkill = " ";
         break;
