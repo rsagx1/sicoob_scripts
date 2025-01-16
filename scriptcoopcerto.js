@@ -136,6 +136,9 @@ function showPopup() {
       case "25166175":
         transfSkill = "25166175 - TER Coopcerto Portador";
         break;
+      case "PUC":
+        transfSkill = "URA PUC";
+        break;
      default:
         transfSkill = " ";
         break;
