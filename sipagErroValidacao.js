@@ -145,6 +145,12 @@ function showPopup() {
       case "23121571":
         transfSkill = "23121571 - Sipag 1.0 Retencao";
         break;
+      case "PUC":
+        transfSkill = "URA PUC";
+        break;
+      case "FD":
+        transfSkill = "URA FD";
+        break;
       default:
         transfSkill = " ";
         break;
