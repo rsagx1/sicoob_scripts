@@ -129,6 +129,9 @@ window.onload = function () {
       case "25166400":
         skillFormatada = "25166400 - Consórcio Troca de Bem";
         break;
+      case "25166399":
+        skillFormatada = "25166399 - Consórcio Recebimento de Crédito";
+        break;
       default:
         skillFormatada = " ";
         break;
@@ -186,7 +189,10 @@ function showPopup() {
         transfSkill = "20868535 - Consórcio Troca Titularidade";
         break;
       case "25166400":
-        transfSkill = "25166400 - Consórcio Troca de Bem";
+        skillFormatada = "25166400 - Consórcio Troca de Bem";
+        break;
+      case "25166399":
+        skillFormatada = "25166399 - Consórcio Recebimento de Crédito";
         break;
       case "PUC":
         transfSkill = "URA PUC";
@@ -239,7 +245,20 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// Opções para o select
+// Opções para "Consórcio Contemplação" (apenas Transferência e URA PUC)
+const contemplationOptions = [
+  { value: " ", text: "Lista de Transferência:" },
+  { value: "20868534", text: "20868534 - Consórcio Transferência" },
+  { value: "PUC", text: "URA PUC" }
+];
+
+// Opções para "Consórcio Recebimento de Crédito" (apenas URA PUC)
+const recebimentoCreditoOptions = [
+  { value: " ", text: "Lista de Transferência:" },
+  { value: "PUC", text: "URA PUC" }
+];
+
+// Opções gerais para o select
 const allOptions = [
   { value: "", text: "Lista de Transferência:" },
   { value: "20868525", text: "20868525 - Consórcio Adesão" },
@@ -251,18 +270,10 @@ const allOptions = [
   { value: "20868531", text: "20868531 - Consórcio Financeiro" },
   { value: "20868532", text: "20868532 - Consórcio Funchal" },
   { value: "20868533", text: "20868533 - Consórcio Retencao" },
-  { value: "20868534", text: "20868534 - Consórcio Transferência" }, // Será exibida apenas para "Consórcio Contemplação"
-  { value: "20868535", text: "20868535 - Consórcio Troca Titularidade" },
-  { value: "25166400", text: "25166400 - Consórcio Troca de Bem" },
-  { value: "PUC", text: "URA PUC" }
-];
-
-// Opções para "Consórcio Contemplação" (apenas Transferência e URA PUC)
-const contemplationOptions = [
-  { value: " ", text: "Lista de Transferência:" },
   { value: "20868534", text: "20868534 - Consórcio Transferência" },
-  { value: "20868532", text: "20868532 - Consórcio Funchal" },
-  { value: "20868533", text: "20868533 - Consórcio Retencao" },
+  { value: "20868535", text: "20868535 - Consórcio Troca Titularidade" },
+  { value: "25166399", text: "25166399 - Consórcio Recebimento de Crédito" },
+  { value: "25166400", text: "25166400 - Consórcio Troca de Bem" }, 
   { value: "PUC", text: "URA PUC" }
 ];
 
@@ -273,11 +284,14 @@ const skillValue = document.getElementById("SkillT").value;
 const select = document.getElementById("ListaTransf");
 
 // Escolher as opções com base na skill
-const optionsToShow = skillValue === "20868530"
-  ? contemplationOptions
-  : allOptions.filter(option => option.value !== "20868534" && option.value !== skillValue);
+const optionsToShow = skillValue === "25166399"
+  ? recebimentoCreditoOptions // Exibe apenas URA PUC para "Consórcio Recebimento de Crédito"
+  : skillValue === "25166399"
+    ? contemplationOptions // Exibe apenas Transferência e URA PUC para "Consórcio Contemplação"
+    : allOptions.filter(option => option.value !== "20868534" && option.value !== skillValue); // Exclui "Consórcio Transferência" e a skill atual
 
 // Adicionar as opções ao select
+select.innerHTML = ''; // Limpa as opções existentes antes de adicionar novas
 optionsToShow.forEach(option => {
   const opt = document.createElement("option");
   opt.value = option.value;
