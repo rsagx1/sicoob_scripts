@@ -104,6 +104,9 @@ window.onload = function () {
       case "23121571":
         skillFormatada = "23121571 - Sipag 1.0 Retencao";
         break;
+      case "29221027":
+        skillFormatada = "29221027 - Sipag 1.0 Transferencia";
+        break;
       case "23120887":
         skillFormatada = "23120887 - Sipag Erro Validacao URA";
         break;
@@ -145,6 +148,9 @@ function showPopup() {
       case "23121571":
         transfSkill = "23121571 - Sipag 1.0 Retencao";
         break;
+      case "29221027":
+        transfSkill = "29221027 - Sipag 1.0 Transferencia";
+        break;       
       case "PUC":
         transfSkill = "URA PUC";
         break;
@@ -208,6 +214,7 @@ const allOptions = [
   { value: "25166192", text: "25166192 - Sipag 2.0 Habilitar Servico Antecipacao" },
   { value: "23121572", text: "23121572 - Sipag 2.0 Retencao" },
   { value: "23121571", text: "23121571 - Sipag 1.0 Retencao" },
+  { value: "29221027", text: "29221027 - Sipag 1.0 Transferencia" },  
   { value: "PUC", text: "URA PUC" },
   { value: "FD", text: "URA FD" }
 ];
