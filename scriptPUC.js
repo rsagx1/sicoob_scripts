@@ -93,41 +93,98 @@ window.onload = function () {
     let skillOrigem = skillOrigemElement.value;
 
     switch (skillOrigem) {
+      case "29221352":
+        skillFormatada = "29221352 - Seguros Vida Retencao";
+        break;
+      case "29221353":
+        skillFormatada = "29221353 - Poupanca";
+        break;
+      case "29221354":
+        skillFormatada = "29221354 - Previ";
+        break;
+      case "29221355":
+        skillFormatada = "29221355 - PUC Bloqueio Dispositivo";
+        break;
+      case "29221357":
+        skillFormatada = "29221357 - Seguro Vida";
+        break;
+      case "29221358":
+        skillFormatada = "29221358 - Seguro Vida Beneficios";
+        break;
+      case "29221359":
+        skillFormatada = "29221359 - Seguro Vida Empresarial";
+        break;
+      case "29221360":
+        skillFormatada = "29221360 - Credito Imobiliario Adesao";
+        break;
+      case "29221361":
+        skillFormatada = "29221361 - Credito Imob Analis de Credito";
+        break;
+      case "29221362":
+        skillFormatada = "29221362 - Credito Imob Financeiro";
+        break;
+      case "29221363":
+        skillFormatada = "29221363 - Credito Imob Outros Assuntos";
+        break;
+      case "29221364":
+        skillFormatada = "29221364 - Credito Imob Sim de Propost";
+        break;
+      case "25166174":
+        skillFormatada = "25166174 - TER Coopera";
+        break;
+      case "25166176":
+        skillFormatada = "25166176 - TER Aplicativo Sicoob";
+        break;
+      case "25166177":
+        skillFormatada = "25166177 - TER Associacao Digital";
+        break;
+      case "25166179":
+        skillFormatada = "25166179 - TER Atendente";
+        break;
+      case "25166180":
+        skillFormatada = "25166180 - TER ATM";
+        break;
+      case "25166181":
+        skillFormatada = "25166181 - TER Home Broker";
+        break;
+      case "25166182":
+        skillFormatada = "25166182 - TER Internet Banking";
+        break;
+      case "25166184":
+        skillFormatada = "25166184 - TER Sicoob Tag";
+        break;
+      case "25166185":
+        skillFormatada = "25166185 - TER Sicoobnet Empresarial";
+        break;
+      case "23120880":
+        skillFormatada = "23120880 - Sipag 2.0 App";
+        break;
       case "20868525":
-        skillFormatada = "20868525 - Consórcio Adesão";
-        break;
-      case "20868526":
-        skillFormatada = "20868526 - Consórcio Assembléia";
-        break;
-      case "20868527":
-        skillFormatada = "20868527 - Consórcio Assuntos Gerais";
-        break;
-      case "20868528":
-        skillFormatada = "20868528 - Consórcio Baixa DOC";
+        skillFormatada = "20868525 - Consorcio Adesao";
         break;
       case "20868529":
-        skillFormatada = "20868529 - Consórcio Cadastro";
-        break;
-      case "20868530":
-        skillFormatada = "20868530 - Consórcio Contemplação";
+        skillFormatada = "20868529 - Consorcio Cadastro";
         break;
       case "20868531":
-        skillFormatada = "20868531 - Consórcio Financeiro";
+        skillFormatada = "20868531 - Consorcio Financeiro";
         break;
-      case "20868532":
-        skillFormatada = "20868532 - Consórcio Funchal";
+      case "20868526":
+        skillFormatada = "20868526 - Consorcio Assembleia";
+        break;
+      case "20868530":
+        skillFormatada = "20868530 - Consorcio Contemplacao";
+        break;
+      case "20868528":
+        skillFormatada = "20868528 - Consorcio Baixa de Documentacao";
         break;
       case "20868533":
-        skillFormatada = "20868533 - Consórcio Retenção";
-        break;
-      case "20868534":
-        skillFormatada = "20868534 - Consórcio Sicoob";
+        skillFormatada = "20868533 - Consorcio Retencao";
         break;
       case "20868535":
-        skillFormatada = "20868535 - Consórcio Troca Titularidade";
+        skillFormatada = "20868535 - Consorcio Troca de Titularidade";
         break;
-      case "25166400":
-        skillFormatada = "25166400 - Consórcio Troca de Bem";
+      case "20868527":
+        skillFormatada = "20868527 - Consorcio Assuntos Gerais";
         break;
       default:
         skillFormatada = " ";
@@ -152,44 +209,98 @@ function showPopup() {
     let transfSkill = "";
 
     switch (opTransf) {
+    case "29221352":
+        transfSkill = "29221352 - Seguros Vida Retencao";
+        break;
+      case "29221353":
+        transfSkill = "29221353 - Poupanca";
+        break;
+      case "29221354":
+        transfSkill = "29221354 - Previ";
+        break;
+      case "29221355":
+        transfSkill = "29221355 - PUC Bloqueio Dispositivo";
+        break;
+      case "29221357":
+        transfSkill = "29221357 - Seguro Vida";
+        break;
+      case "29221358":
+        transfSkill = "29221358 - Seguro Vida Beneficios";
+        break;
+      case "29221359":
+        transfSkill = "29221359 - Seguro Vida Empresarial";
+        break;
+      case "29221360":
+        transfSkill = "29221360 - Credito Imobiliario Adesao";
+        break;
+      case "29221361":
+        transfSkill = "29221361 - Credito Imob Analis de Credito";
+        break;
+      case "29221362":
+        transfSkill = "29221362 - Credito Imob Financeiro";
+        break;
+      case "29221363":
+        transfSkill = "29221363 - Credito Imob Outros Assuntos";
+        break;
+      case "29221364":
+        transfSkill = "29221364 - Credito Imob Sim de Propost";
+        break;
+      case "25166174":
+        transfSkill = "25166174 - TER Coopera";
+        break;
+      case "25166176":
+        transfSkill = "25166176 - TER Aplicativo Sicoob";
+        break;
+      case "25166177":
+        transfSkill = "25166177 - TER Associacao Digital";
+        break;
+      case "25166179":
+        transfSkill = "25166179 - TER Atendente";
+        break;
+      case "25166180":
+        transfSkill = "25166180 - TER ATM";
+        break;
+      case "25166181":
+        transfSkill = "25166181 - TER Home Broker";
+        break;
+      case "25166182":
+        transfSkill = "25166182 - TER Internet Banking";
+        break;
+      case "25166184":
+        transfSkill = "25166184 - TER Sicoob Tag";
+        break;
+      case "25166185":
+        transfSkill = "25166185 - TER Sicoobnet Empresarial";
+        break;
+      case "23120880":
+        transfSkill = "23120880 - Sipag 2.0 App";
+        break;
       case "20868525":
-        transfSkill = "20868525 - Consórcio Adesão";
-        break;
-      case "20868526":
-        transfSkill = "20868526 - Consórcio Assembléia";
-        break;
-      case "20868527":
-        transfSkill = "20868527 - Consórcio Assuntos Gerais";
-        break;
-      case "20868528":
-        transfSkill = "20868528 - Consórcio Baixa DOC";
+        transfSkill = "20868525 - Consorcio Adesao";
         break;
       case "20868529":
-        transfSkill = "20868529 - Consórcio Cadastro";
-        break;
-      case "20868530":
-        transfSkill = "20868530 - Consórcio Contemplação";
+        transfSkill = "20868529 - Consorcio Cadastro";
         break;
       case "20868531":
-        transfSkill = "20868531 - Consórcio Financeiro";
+        transfSkill = "20868531 - Consorcio Financeiro";
         break;
-      case "20868532":
-        transfSkill = "20868532 - Consórcio Funchal";
+      case "20868526":
+        transfSkill = "20868526 - Consorcio Assembleia";
+        break;
+      case "20868530":
+        transfSkill = "20868530 - Consorcio Contemplacao";
+        break;
+      case "20868528":
+        transfSkill = "20868528 - Consorcio Baixa de Documentacao";
         break;
       case "20868533":
-        transfSkill = "20868533 - Consórcio Retenção";
-        break;
-      case "20868534":
-        transfSkill = "20868534 - Consórcio Sicoob";
+        transfSkill = "20868533 - Consorcio Retencao";
         break;
       case "20868535":
-        transfSkill = "20868535 - Consórcio Troca Titularidade";
+        transfSkill = "20868535 - Consorcio Troca de Titularidade";
         break;
-      case "25166400":
-        transfSkill = "25166400 - Consórcio Troca de Bem";
-        break;
-      case "PUC":
-        transfSkill = "URA PUC";
+      case "20868527":
+        transfSkill = "20868527 - Consorcio Assuntos Gerais";
         break;
     }
 
@@ -242,29 +353,47 @@ document.addEventListener('DOMContentLoaded', function() {
 // Opções para o select
 const allOptions = [
   { value: "", text: "Lista de Transferência:" },
-  { value: "20868525", text: "20868525 - Consórcio Adesão" },
-  { value: "20868526", text: "20868526 - Consórcio Assembleia" },
-  { value: "20868527", text: "20868527 - Consórcio Assuntos Gerais" },
-  { value: "20868528", text: "20868528 - Consórcio Baixa DOC" },
-  { value: "20868529", text: "20868529 - Consórcio Cadastro" },
-  { value: "20868530", text: "20868530 - Consórcio Contemplação" },
-  { value: "20868531", text: "20868531 - Consórcio Financeiro" },
-  { value: "20868532", text: "20868532 - Consórcio Funchal" },
-  { value: "20868533", text: "20868533 - Consórcio Retencao" },
-  { value: "20868534", text: "20868534 - Consórcio Transferência" }, // Será exibida apenas para "Consórcio Contemplação"
-  { value: "20868535", text: "20868535 - Consórcio Troca Titularidade" },
-  { value: "25166400", text: "25166400 - Consórcio Troca de Bem" },
-  { value: "PUC", text: "URA PUC" }
+  { value: "29221352", text: "29221352 - Seguros Vida Retencao" },
+  { value: "29221353", text: "29221353 - Poupanca" },
+  { value: "29221354", text: "29221354 - Previ" },
+  { value: "29221355", text: "29221355 - PUC Bloqueio Dispositivo" },
+  { value: "29221357", text: "29221357 - Seguro Vida" },
+  { value: "29221358", text: "29221358 - Seguro Vida Beneficios" },
+  { value: "29221359", text: "29221359 - Seguro Vida Empresarial" },
+  { value: "29221360", text: "29221360 - Credito Imobiliario Adesao" },
+  { value: "29221361", text: "29221361 - Credito Imob Analis de Credito" },
+  { value: "29221362", text: "29221362 - Credito Imob Financeiro" },
+  { value: "29221363", text: "29221363 - Credito Imob Outros Assuntos" },
+  { value: "29221364", text: "29221364 - Credito Imob Sim de Propost" },
+  { value: "25166174", text: "25166174 - TER Coopera" },
+  { value: "25166176", text: "25166176 - TER Aplicativo Sicoob" },
+  { value: "25166177", text: "25166177 - TER Associacao Digital" },
+  { value: "25166179", text: "25166179 - TER Atendente" },
+  { value: "25166180", text: "25166180 - TER ATM" },
+  { value: "25166181", text: "25166181 - TER Home Broker" },
+  { value: "25166182", text: "25166182 - TER Internet Banking" },
+  { value: "25166184", text: "25166184 - TER Sicoob Tag" },
+  { value: "25166185", text: "25166185 - TER Sicoobnet Empresarial" },
+  { value: "23120880", text: "23120880 - Sipag 2.0 App" },
+  { value: "20868525", text: "20868525 - Consorcio Adesao" },
+  { value: "20868529", text: "20868529 - Consorcio Cadastro" },
+  { value: "20868531", text: "20868531 - Consorcio Financeiro" },
+  { value: "20868526", text: "20868526 - Consorcio Assembleia" },
+  { value: "20868530", text: "20868530 - Consorcio Contemplacao" },
+  { value: "20868528", text: "20868528 - Consorcio Baixa de Documentacao" },
+  { value: "20868533", text: "20868533 - Consorcio Retencao" },
+  { value: "20868535", text: "20868535 - Consorcio Troca de Titularidade" },
+  { value: "20868527", text: "20868527 - Consorcio Assuntos Gerais" },
 ];
 
 // Opções para "Consórcio Contemplação" (apenas Transferência e URA PUC)
-const contemplationOptions = [
-  { value: " ", text: "Lista de Transferência:" },
-  { value: "20868534", text: "20868534 - Consórcio Transferência" },
-  { value: "20868532", text: "20868532 - Consórcio Funchal" },
-  { value: "20868533", text: "20868533 - Consórcio Retencao" },
-  { value: "PUC", text: "URA PUC" }
-];
+// const contemplationOptions = [
+//   { value: " ", text: "Lista de Transferência:" },
+//   { value: "20868534", text: "20868534 - Consórcio Transferência" },
+//   { value: "20868532", text: "20868532 - Consórcio Funchal" },
+//   { value: "20868533", text: "20868533 - Consórcio Retencao" },
+//   { value: "PUC", text: "URA PUC" }
+// ];
 
 // Obter o valor do input SkillT
 const skillValue = document.getElementById("SkillT").value;
