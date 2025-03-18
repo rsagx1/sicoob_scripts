@@ -383,7 +383,7 @@ const allOptions = [
   { value: "20868528", text: "20868528 - Consorcio Baixa de Documentacao" },
   { value: "20868533", text: "20868533 - Consorcio Retencao" },
   { value: "20868535", text: "20868535 - Consorcio Troca de Titularidade" },
-  { value: "20868527", text: "20868527 - Consorcio Assuntos Gerais" },
+  { value: "20868527", text: "20868527 - Consorcio Assuntos Gerais" }
 ];
 
 // Opções para "Consórcio Contemplação" (apenas Transferência e URA PUC)
