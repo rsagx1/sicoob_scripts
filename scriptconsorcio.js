@@ -1,300 +1,151 @@
-// Função de copiar texto ao clicar no botão "Copiar"
+// Funções de cópia
 function copyToClipboard(elementId) {
-  var copyText = document.getElementById(elementId);
+  const copyText = document.getElementById(elementId);
   if (copyText) {
     copyText.select();
     document.execCommand("copy");
-    console.log("Copiado pelo botão: " + copyText.value);
+    console.log(`Copiado: ${copyText.value}`);
   }
 }
 
-// Função de copiar texto ao clicar no campo
-/*
-function copyOnClick(event) {
-  var copyText = event.target;
-  copyText.select();
-  document.execCommand("copy");
-  console.log("Copiado com clique: " + copyText.value);
-}
-*/
-
-const inputs = document.querySelectorAll('input[type="text"]');
-
-/*
-inputs.forEach(input => {
-  input.addEventListener('click', copyOnClick);
-});
-*/
-
-// Função de copiar texto ao focar no campo
 function copyOnFocus(elementId) {
-  var copyText = document.getElementById(elementId);
-  if (copyText) {
-    copyText.select();
-    document.execCommand("copy");
-    console.log("Copiado com foco: " + copyText.value);
-  }
+  copyToClipboard(elementId);
 }
 
-// Função de preencher o dropdown de "Navegação"
-function populateDropdown() {
-  var caminhoElement = document.getElementById('Caminho');
-  if (caminhoElement) {
-    var caminho = caminhoElement.value;
-    var caminhoArray = caminho.split(',');
-    var select = document.getElementById('navegacaoURA');
-
-    select.innerHTML = '';
-
-    var defaultOption = document.createElement('option');
-    defaultOption.value = "";
-    defaultOption.text = "Navegação:";
-    defaultOption.selected = true;
-    defaultOption.disabled = true;
-    defaultOption.style.color = "#000000";
-    select.appendChild(defaultOption);
-
-    caminhoArray.forEach(function (item) {
-      var option = document.createElement('option');
-      option.value = item.trim();
-      option.text = item.trim();
-      option.disabled = true;
-      option.style.color = "#000000";
-      select.appendChild(option);
-    });
-  }
+// Função auxiliar para criar opções
+function createOption(value, text) {
+  const option = document.createElement('option');
+  option.value = value;
+  option.textContent = text;
+  return option;
 }
 
-window.onload = function () {
-  // Preencher dropdown
-  populateDropdown();
+// Preencher dropdown de navegação
+function populateNavigation() {
+  const caminho = document.getElementById('Caminho').value.split(',');
+  const select = document.getElementById('navegacaoURA');
+  
+  select.innerHTML = '';
+  select.appendChild(createOption('', 'Navegação:')).disabled = true;
 
-  // Não exibir mesma skill
-  const skillValueElement = document.getElementById('SkillT');
-  const select = document.getElementById('ListaTransf');
-  const options = select.querySelectorAll('option');
+  caminho.forEach(item => {
+    const option = createOption(item.trim(), item.trim());
+    option.disabled = true;
+    select.appendChild(option);
+  });
+}
 
-  if (skillValueElement) {
-    const skillValue = skillValueElement.value;
-    options.forEach(option => {
-      if (option.value === skillValue) {
-        option.style.display = 'none';
-      } else {
-        option.style.display = '';
-      }
-    });
-  }
-
-  // Exibir skill de entrada
-  const skillOrigemElement = document.getElementById('SkillOrigem');
-  let skillFormatada = "";
-
-  if (skillOrigemElement) {
-    let skillOrigem = skillOrigemElement.value;
-
-    switch (skillOrigem) {
-      case "20868525":
-        skillFormatada = "20868525 - Consórcio Adesão";
-        break;
-      case "20868526":
-        skillFormatada = "20868526 - Consórcio Assembléia";
-        break;
-      case "20868527":
-        skillFormatada = "20868527 - Consórcio Assuntos Gerais";
-        break;
-      case "20868528":
-        skillFormatada = "20868528 - Consórcio Baixa DOC";
-        break;
-      case "20868529":
-        skillFormatada = "20868529 - Consórcio Cadastro";
-        break;
-      case "20868530":
-        skillFormatada = "20868530 - Consórcio Contemplação";
-        break;
-      case "20868531":
-        skillFormatada = "20868531 - Consórcio Financeiro";
-        break;
-      case "20868532":
-        skillFormatada = "20868532 - Consórcio Funchal";
-        break;
-      case "20868533":
-        skillFormatada = "20868533 - Consórcio Retenção";
-        break;
-      case "20868534":
-        skillFormatada = "20868534 - Consórcio Sicoob";
-        break;
-      case "20868535":
-        skillFormatada = "20868535 - Consórcio Troca Titularidade";
-        break;
-      case "25166400":
-        skillFormatada = "25166400 - Consórcio Troca de Bem";
-        break;
-      case "25166399":
-        skillFormatada = "25166399 - Consórcio Recebimento de Crédito";
-        break;
-      default:
-        skillFormatada = " ";
-        break;
-    }
-
-    const origemElement = document.getElementById('Origem');
-    if (origemElement) {
-      origemElement.value = skillFormatada;
-    } else {
-      console.warn("Elemento com ID 'Origem' não encontrado.");
-    }
+// Configuração de skills
+const skillConfig = {
+  skills: {
+    "20868525": "Consórcio Adesão",
+    "20868526": "Consórcio Assembléia",
+    "20868527": "Consórcio Assuntos Gerais",
+    "20868528": "Consórcio Baixa DOC",
+    "20868529": "Consórcio Cadastro",
+    "20868530": "Consórcio Contemplação",
+    "20868531": "Consórcio Financeiro",
+    "20868532": "Consórcio Funchal",
+    "20868533": "Consórcio Retenção",
+    "20868534": "Consórcio Transferência",
+    "20868535": "Consórcio Troca Titularidade",
+    "25166400": "Consórcio Troca de Bem",
+    "25166399": "Consórcio Recebimento de Crédito"
+  },
+  
+  transferOptions: {
+    default: [
+      {value: "20868525", text: "Consórcio Adesão"},
+      {value: "20868526", text: "Consórcio Assembleia"},
+      {value: "20868527", text: "Consórcio Assuntos Gerais"},
+      {value: "20868528", text: "Consórcio Baixa DOC"},
+      {value: "20868529", text: "Consórcio Cadastro"},
+      {value: "20868530", text: "Consórcio Contemplação"},
+      {value: "20868531", text: "Consórcio Financeiro"},
+      {value: "20868532", text: "Consórcio Funchal"},
+      {value: "20868533", text: "Consórcio Retenção"},
+      {value: "20868534", text: "Consórcio Transferência"},
+      {value: "20868535", text: "Consórcio Troca Titularidade"},
+      {value: "25166400", text: "Consórcio Troca de Bem"},
+      {value: "25166399", text: "Consórcio Recebimento de Crédito"},
+      {value: "PUC", text: "URA PUC"}
+    ],
+    "25166399": [
+      {value: "PUC", text: "URA PUC"}
+    ],
+    "20868530": [
+      {value: "20868534", text: "Consórcio Transferência"},
+      {value: "20868532", text: "Consórcio Funchal"},
+      {value: "PUC", text: "URA PUC"}
+    ]
   }
 };
 
-// Popup Confirmação Transferência
-function showPopup() {
-  let opTransf = document.getElementById('ListaTransf').value;
-  console.log(opTransf);
+// Gerenciar transferências
+function setupTransfers() {
+  const skillValue = document.getElementById("SkillT").value;
+  const select = document.getElementById("ListaTransf");
+  const options = skillConfig.transferOptions[skillValue] || skillConfig.transferOptions.default;
 
-  if (opTransf != "") {
-    let transfSkill = "";
+  select.innerHTML = '';
+  select.appendChild(createOption('', 'Lista de Transferência:')).disabled = true;
 
-    switch (opTransf) {
-      case "20868525":
-        transfSkill = "20868525 - Consórcio Adesão";
-        break;
-      case "20868526":
-        transfSkill = "20868526 - Consórcio Assembléia";
-        break;
-      case "20868527":
-        transfSkill = "20868527 - Consórcio Assuntos Gerais";
-        break;
-      case "20868528":
-        transfSkill = "20868528 - Consórcio Baixa DOC";
-        break;
-      case "20868529":
-        transfSkill = "20868529 - Consórcio Cadastro";
-        break;
-      case "20868530":
-        transfSkill = "20868530 - Consórcio Contemplação";
-        break;
-      case "20868531":
-        transfSkill = "20868531 - Consórcio Financeiro";
-        break;
-      case "20868532":
-        transfSkill = "20868532 - Consórcio Funchal";
-        break;
-      case "20868533":
-        transfSkill = "20868533 - Consórcio Retenção";
-        break;
-      case "20868534":
-        transfSkill = "20868534 - Consórcio Sicoob";
-        break;
-      case "20868535":
-        transfSkill = "20868535 - Consórcio Troca Titularidade";
-        break;
-      case "25166400":
-        skillFormatada = "25166400 - Consórcio Troca de Bem";
-        break;
-      case "25166399":
-        skillFormatada = "25166399 - Consórcio Recebimento de Crédito";
-        break;
-      case "PUC":
-        transfSkill = "URA PUC";
-        break;
+  options.forEach(opt => {
+    if (opt.value !== skillValue) {
+      select.appendChild(createOption(opt.value, opt.text));
     }
+  });
+}
 
-    const result = confirm("Realmente deseja transferir para " + transfSkill + "?");
-    if (result) {
-      executarFuncao();
-    }
-  } else {
-    alert("Nenhuma opção selecionada.");
+// Exibir skill de origem
+function showOriginSkill() {
+  const skillOrigem = document.getElementById('SkillOrigem').value;
+  const origemElement = document.getElementById('Origem');
+  
+  if (origemElement) {
+    const skillText = skillConfig.skills[skillOrigem] || '';
+    origemElement.value = skillText ? `${skillOrigem} - ${skillText}` : '';
   }
 }
 
-function executarFuncao() {
-  let opTransf = document.getElementById('ListaTransf').value;
-  console.log('Função executada!');
-  document.getElementById('openConfirmation').value = "transf";
+// Controle de transferência
+function handleTransfer() {
+  const select = document.getElementById('ListaTransf');
+  const button = document.getElementById('openConfirmation');
+  
+  button.disabled = !select.value;
+  button.style.cursor = select.value ? "pointer" : "not-allowed";
+
+  select.addEventListener('change', () => {
+    button.disabled = !select.value;
+    button.style.cursor = select.value ? "pointer" : "not-allowed";
+  });
 }
 
-document.getElementById('openConfirmation').addEventListener('click', showPopup);
+// Confirmar transferência
+function confirmTransfer() {
+  const opTransf = document.getElementById('ListaTransf').value;
+  if (!opTransf) return alert("Nenhuma opção selecionada.");
 
-// Botão "Pesquisa"
-document.getElementById("btnPesquisa").addEventListener("click", function () {
-  console.log('BOTAO PESQUISA');
-  this.value = "pesquisa";
-  console.log('ACIONADO');
-});
+  const skillName = skillConfig.skills[opTransf] || 
+                   (opTransf === 'PUC' ? 'URA PUC' : 'Skill Desconhecida');
+  
+  if (confirm(`Realmente deseja transferir para ${skillName}?`)) {
+    document.getElementById('openConfirmation').value = "transf";
+    console.log('Transferência confirmada para:', skillName);
+  }
+}
 
-// Habilitar/desabilitar botão baseado na seleção
-document.addEventListener('DOMContentLoaded', function() {
-  const selectElement = document.getElementById('ListaTransf');
-  const button = document.getElementById('openConfirmation');
+// Inicialização
+window.onload = function() {
+  populateNavigation();
+  setupTransfers();
+  showOriginSkill();
+  handleTransfer();
 
-  // Iniciar com o botão desabilitado
-  button.disabled = true;
-  button.style.cursor = "not-allowed";
-
-  // Adicionar evento para habilitar/desabilitar o botão quando houver mudança no select
-  selectElement.addEventListener('change', function() {
-    if (selectElement.value !== "") {
-      button.disabled = false;
-      button.style.cursor = "pointer";
-    } else {
-      button.disabled = true;
-      button.style.cursor = "not-allowed";
-    }
+  document.getElementById('openConfirmation').addEventListener('click', confirmTransfer);
+  document.getElementById("btnPesquisa").addEventListener("click", function() {
+    this.value = "pesquisa";
+    console.log('Botão pesquisa acionado');
   });
-});
-
-
-// Opções para "Consórcio Contemplação" (apenas Transferência e URA PUC)
-const contemplationOptions = [
-  { value: " ", text: "Lista de Transferência:" },
-  { value: "20868534", text: "20868534 - Consórcio Transferência" },
-  { value: "PUC", text: "URA PUC" }
-];
-
-// Opções para "Consórcio Recebimento de Crédito" (apenas URA PUC)
-const recebimentoCreditoOptions = [
-  { value: " ", text: "Lista de Transferência:" },
-  { value: "PUC", text: "URA PUC" }
-];
-
-// Opções gerais para o select
-const allOptions = [
-  { value: "", text: "Lista de Transferência:" },
-  { value: "20868525", text: "20868525 - Consórcio Adesão" },
-  { value: "20868526", text: "20868526 - Consórcio Assembleia" },
-  { value: "20868527", text: "20868527 - Consórcio Assuntos Gerais" },
-  { value: "20868528", text: "20868528 - Consórcio Baixa DOC" },
-  { value: "20868529", text: "20868529 - Consórcio Cadastro" },
-  { value: "20868530", text: "20868530 - Consórcio Contemplação" },
-  { value: "20868531", text: "20868531 - Consórcio Financeiro" },
-  { value: "20868532", text: "20868532 - Consórcio Funchal" },
-  { value: "20868533", text: "20868533 - Consórcio Retencao" },
-  { value: "20868534", text: "20868534 - Consórcio Transferência" },
-  { value: "20868535", text: "20868535 - Consórcio Troca Titularidade" },
-  { value: "25166399", text: "25166399 - Consórcio Recebimento de Crédito" },
-  { value: "25166400", text: "25166400 - Consórcio Troca de Bem" }, 
-  { value: "PUC", text: "URA PUC" }
-];
-
-// Obter o valor do input SkillT
-const skillValue = document.getElementById("SkillT").value;
-
-// Obter o select
-const select = document.getElementById("ListaTransf");
-
-// Escolher as opções com base na skill
-const optionsToShow = skillValue === "25166399"
-  ? recebimentoCreditoOptions // Exibe apenas URA PUC para "Consórcio Recebimento de Crédito"
-  : skillValue === "25166399"
-    ? contemplationOptions // Exibe apenas Transferência e URA PUC para "Consórcio Contemplação"
-    : allOptions.filter(option => option.value !== "20868534" && option.value !== skillValue); // Exclui "Consórcio Transferência" e a skill atual
-
-// Adicionar as opções ao select
-select.innerHTML = ''; // Limpa as opções existentes antes de adicionar novas
-optionsToShow.forEach(option => {
-  const opt = document.createElement("option");
-  opt.value = option.value;
-  opt.textContent = option.text;
-  select.appendChild(opt);
-});
+};
