@@ -38,8 +38,7 @@ function populateNavigation() {
 // Configuração de skills
 const skillConfig = {
   skills: {
-    //"20868532": "Consórcio Funchal"
-    "20907998": "Consórcio Funchal"
+    "20868532": "Consórcio Funchal"
   },
   
   transferOptions: {
