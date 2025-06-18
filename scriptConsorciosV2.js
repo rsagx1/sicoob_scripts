@@ -39,6 +39,7 @@ function populateNavigation() {
 const skillConfig = {
   skills: {
     "20868525": "Consórcio Adesão",
+    "20907998": "testeFabricio"
     "20868526": "Consórcio Assembléia",
     "20868527": "Consórcio Assuntos Gerais",
     "20868528": "Consórcio Baixa DOC",
