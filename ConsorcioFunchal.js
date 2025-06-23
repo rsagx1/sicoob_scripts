@@ -51,10 +51,6 @@ const skillConfig = {
     "20868535": "Consórcio Troca Titularidade",
     "25166400": "Consórcio Troca de Bem",
     "25166399": "Consórcio Recebimento de Crédito"
-    "31507625": "SUPER SANDRA DA CRUZ",
-    "31507626": "SUPER LUCIANA SOARES LIMA",
-    "31507627": "SUPER JOAO MARTINS B NETO",
-    "31507628": "SUPER CAROLYNA M S PRUDES"
   },
   
   transferOptions: {
