@@ -38,24 +38,37 @@ function populateNavigation() {
 // Configuração de skills
 const skillConfig = {
   skills: {
-    "20868796": "Adq Cabal Cadastro",
-    "20868797": "Adq Cabal Atendente",
-    "20868798": "Adq Cabal Credenciamento",
-    "20868799": "Adq Cabal Portal",
-    "20868801": "Adq Cabal Financeiro",
-    "20868802": "Adq Cabal Retencao",
-    "20868803": "Adq Cabal Suporte Tecnico"
+    "20868525": "Consórcio Adesão",
+    "25166174": "Consórcio Teste",
+    "20907998": "testeFabricio"
+    "20868526": "Consórcio Assembléia",
+    "20868527": "Consórcio Assuntos Gerais",
+    "20868528": "Consórcio Baixa DOC",
+    "20868529": "Consórcio Cadastro",
+    "20868530": "Consórcio Contemplação",
+    "20868531": "Consórcio Financeiro",
+    "20868532": "Consórcio Funchal",
+    "20868533": "Consórcio Retenção",
+    "20868534": "Consórcio Transferência",
+    "20868535": "Consórcio Troca Titularidade",
+    "25166400": "Consórcio Troca de Bem",
+    "25166399": "Consórcio Recebimento de Crédito"
   },
   
   transferOptions: {
     default: [
-      {value: "20868796", text: "Adq Cabal Cadastro"},
-      {value: "20868797", text: "Adq Cabal Atendente"},
-      {value: "20868798", text: "Adq Cabal Credenciamento"},
-      {value: "20868799", text: "Adq Cabal Portal"},
-      {value: "20868801", text: "Adq Cabal Financeiro"},
-      {value: "20868802", text: "Adq Cabal Retencao"},
-      {value: "20868803", text: "Adq Cabal Suporte Tecnico"},
+      {value: "31507625", text: "2.SUPER: SANDRA DA CRUZ"},
+      {value: "31507626", text: "2.SUPER: LUCIANA SOARES LIMA"},
+      {value: "31507627", text: "2.SUPER: JOAO MARTINS B. NETO"},
+      {value: "31507628", text: "2.SUPER: CAROLYNA M. S. PRUDES"},
+      {value: "PUC", text: "URA PUC"}
+    ],
+    "25166399": [
+      {value: "PUC", text: "URA PUC"}
+    ],
+    "20868530": [
+      {value: "20868534", text: "Consórcio Transferência"},
+      {value: "20868532", text: "Consórcio Funchal"},
       {value: "PUC", text: "URA PUC"}
     ]
   }
