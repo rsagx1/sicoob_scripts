@@ -56,10 +56,19 @@ const skillConfig = {
   
   transferOptions: {
     default: [
-      {value: "31507625", text: "2.SUPER: SANDRA DA CRUZ"},
-      {value: "31507626", text: "2.SUPER: LUCIANA SOARES LIMA"},
-      {value: "31507627", text: "2.SUPER: JOAO MARTINS B. NETO"},
-      {value: "31507628", text: "2.SUPER: CAROLYNA M. S. PRUDES"},
+      {value: "20868525", text: "Consórcio Adesão"},
+      {value: "20868526", text: "Consórcio Assembleia"},
+      {value: "20868527", text: "Consórcio Assuntos Gerais"},
+      {value: "20868528", text: "Consórcio Baixa DOC"},
+      {value: "20868529", text: "Consórcio Cadastro"},
+      {value: "20868530", text: "Consórcio Contemplação"},
+      {value: "20868531", text: "Consórcio Financeiro"},
+      {value: "20868532", text: "Consórcio Funchal"},
+      {value: "20868533", text: "Consórcio Retenção"},
+      {value: "20868534", text: "Consórcio Transferência"},
+      {value: "20868535", text: "Consórcio Troca Titularidade"},
+      {value: "25166400", text: "Consórcio Troca de Bem"},
+      {value: "25166399", text: "Consórcio Recebimento de Crédito"},
       {value: "PUC", text: "URA PUC"}
     ],
     "25166399": [
