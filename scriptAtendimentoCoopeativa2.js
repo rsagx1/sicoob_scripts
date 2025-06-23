@@ -103,6 +103,7 @@ const skillConfig = {
     31507626: "2. SUPER: LUCIANA SOARES LIMA", 
     31507692: "Seguro Prestamista", 
     31507693: "Gestao De Acesso", 
+    25166174: "Teste Sicoob", 
   },
 
   transferOptions: {
@@ -187,6 +188,7 @@ const skillConfig = {
       { value: "31507626", text: "2. SUPER: LUCIANA SOARES LIMA" },
       { value: "31507692", text: "Seguro Prestamista" },
       { value: "31507693", text: "Gestao De Acesso" },
+      { value: "25166174", text: "Teste Sicoob" },
     ],
   },
 };
