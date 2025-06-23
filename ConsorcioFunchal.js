@@ -38,16 +38,36 @@ function populateNavigation() {
 // Configuração de skills
 const skillConfig = {
   skills: {
-    "20868532": "Consórcio Funchal"
-    "25166174": "Consórcio Funchal teste"
+    "20868525": "Consórcio Adesão",
+    "20868526": "Consórcio Assembléia",
+    "20868527": "Consórcio Assuntos Gerais",
+    "20868528": "Consórcio Baixa DOC",
+    "20868529": "Consórcio Cadastro",
+    "20868530": "Consórcio Contemplação",
+    "20868531": "Consórcio Financeiro",
+    "20868532": "Consórcio Funchal",
+    "20868533": "Consórcio Retenção",
+    "20868534": "Consórcio Transferência",
+    "20868535": "Consórcio Troca Titularidade",
+    "25166400": "Consórcio Troca de Bem",
+    "25166399": "Consórcio Recebimento de Crédito"
   },
   
   transferOptions: {
     default: [
-      {value: "31507625", text: "2.SUPER: SANDRA DA CRUZ"},
-      {value: "31507626", text: "2.SUPER: LUCIANA SOARES LIMA"},
-      {value: "31507627", text: "2.SUPER: JOAO MARTINS B. NETO"},
-      {value: "31507628", text: "2.SUPER: CAROLYNA M. S. PRUDES"},
+      {value: "20868525", text: "Consórcio Adesão"},
+      {value: "20868526", text: "Consórcio Assembleia"},
+      {value: "20868527", text: "Consórcio Assuntos Gerais"},
+      {value: "20868528", text: "Consórcio Baixa DOC"},
+      {value: "20868529", text: "Consórcio Cadastro"},
+      {value: "20868530", text: "Consórcio Contemplação"},
+      {value: "20868531", text: "Consórcio Financeiro"},
+      {value: "20868532", text: "Consórcio Funchal"},
+      {value: "20868533", text: "Consórcio Retenção"},
+      {value: "20868534", text: "Consórcio Transferência"},
+      {value: "20868535", text: "Consórcio Troca Titularidade"},
+      {value: "25166400", text: "Consórcio Troca de Bem"},
+      {value: "25166399", text: "Consórcio Recebimento de Crédito"},
       {value: "PUC", text: "URA PUC"}
     ],
     "25166399": [
