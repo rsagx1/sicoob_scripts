@@ -51,7 +51,6 @@ const skillConfig = {
     "20868535": "Consórcio Troca Titularidade",
     "25166400": "Consórcio Troca de Bem",
     "25166399": "Consórcio Recebimento de Crédito"
-    "25166174": "Consórcio Testes Gerais"
   },
   
   transferOptions: {
