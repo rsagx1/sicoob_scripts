@@ -39,6 +39,8 @@ function populateNavigation() {
 const skillConfig = {
   skills: {
     "20868525": "Consórcio Adesão",
+    "25166174": "Consórcio Teste",
+    "20907998": "testeFabricio"
     "20868526": "Consórcio Assembléia",
     "20868527": "Consórcio Assuntos Gerais",
     "20868528": "Consórcio Baixa DOC",
@@ -127,23 +129,14 @@ function confirmTransfer() {
   }
 }
 
-  // Botão confirmação
-  const openBtn = document.getElementById("openConfirmation");
-  if (openBtn && typeof confirmTransfer === 'function') {
-    openBtn.addEventListener("click", confirmTransfer);
-  }
-
 // Inicialização
-window.onload = function () {
+window.onload = function() {
   populateNavigation();
   setupTransfers();
   showOriginSkill();
   handleTransfer();
-  document.getElementById("recordingModal").style.display = "block";
-  document.getElementById("overlay").style.display = "block";
-  document
-    .getElementById("openConfirmation")
-    .addEventListener("click", confirmTransfer);
+
+  document.getElementById('openConfirmation').addEventListener('click', confirmTransfer);
   document.getElementById("btnPesquisa").addEventListener("click", function() {
     this.value = "pesquisa";
     console.log('Botão pesquisa acionado');
