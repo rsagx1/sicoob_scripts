@@ -127,6 +127,12 @@ function confirmTransfer() {
   }
 }
 
+  // Botão confirmação
+  const openBtn = document.getElementById("openConfirmation");
+  if (openBtn && typeof confirmTransfer === 'function') {
+    openBtn.addEventListener("click", confirmTransfer);
+  }
+
 // Inicialização
 window.onload = function() {
   populateNavigation();
