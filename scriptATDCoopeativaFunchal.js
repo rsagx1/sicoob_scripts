@@ -71,6 +71,7 @@ const skillConfig = {
     29220981: "Empresarial RM",
     29220982: "Empresarial SISBR",
     29220983: "Emprestimo",
+    31507693: "Gestao De Acesso", 
     29220984: "Link - Agendamentos",
     29220985: "Link - Reparos",
     29220986: "Migracao",
@@ -88,6 +89,7 @@ const skillConfig = {
     29220997: "Rotinas Contabeis",
     29220998: "Seguranca Cibernetica",
     29220999: "Seguros",
+    31507692: "Seguro Prestamista", 
     29221000: "Sicoob Moob",
     29221001: "Sicoob TAG",
     29221002: "Sipag 1.0",
@@ -96,83 +98,21 @@ const skillConfig = {
     29221005: "Solicitacao Fundo",
     29221006: "Transacao de Cartoes",
     29221009: "Transferencia Internacional",
+    "AC": "URA Atendimento à Cooperativas",
+    31507625: "2. SUPER: SANDRA DA CRUZ", 
+    31507628: "2. SUPER: CAROLYNA M. S. PRUDES", 
+    31507627: "2. SUPER: JOÃO MARTINS B. NETO", 
+    31507626: "2. SUPER: LUCIANA SOARES LIMA", 
+    25166174: "Teste Sicoob", 
   },
 
   transferOptions: {
     default: [
-      { value: "29221007", text: "Consorcio Imob Funchal" },
-      { value: "29220975", text: "Credito Imobiliario Funchal" },
-      { value: "29220937", text: "5300-IRRF" },
-      { value: "29220938", text: "Adquirencia Cabal" },
-      { value: "29220939", text: "Antecipacao" },
-      { value: "29220940", text: "App Sicoob e IB" },
-      { value: "29220941", text: "Arquivos Oficiais" },
-      { value: "29220942", text: "Atendimento Digital" },
-      { value: "29220943", text: "ATM" },
-      { value: "29220944", text: "Bacen Jud" },
-      { value: "29220945", text: "Cadastro de Pessoas" },
-      { value: "29220946", text: "Caixa e Correspondente" },
-      { value: "29220947", text: "Captacao Remunerada" },
-      { value: "29220948", text: "CLS-CRL-e-GRC" },
-      { value: "29220949", text: "Cob Arquivos" },
-      { value: "29220950", text: "Cob Beneficiario" },
-      { value: "29220951", text: "Cob Emissao" },
-      { value: "29220952", text: "Cob Mecanismo" },
-      { value: "29220953", text: "Cob Negativacao" },
-      { value: "29220955", text: "Cob Relatorios" },
-      { value: "29220954", text: "Cobranca Administrativa" },
-      { value: "29220956", text: "Compensacao" },
-      { value: "29220957", text: "Conciliacao Contabil" },
-      { value: "29220958", text: "Consorcio Cobranca" },
-      { value: "29220959", text: "Consorcio Condicoes" },
-      { value: "29220960", text: "Consorcio Contemplacao" },
-      { value: "29220961", text: "Consorcio Imovel" },
-      { value: "29220962", text: "Consorcio Vendas" },
-      { value: "29220963", text: "Conta Capital" },
-      { value: "29220964", text: "Conta Corrente" },
-      { value: "29220965", text: "Controles Internos" },
-      { value: "29220966", text: "Convenios" },
-      { value: "29220967", text: "Coopera e Coopcerto" },
-      { value: "29220968", text: "COP" },
-      { value: "29220969", text: "Credito Consignado" },
-      { value: "29220970", text: "Credito Imob Analise" },
-      { value: "29220971", text: "Credito Imob Demais" },
-      { value: "29220972", text: "Credito Imob Pagamentos" },
-      { value: "29220973", text: "Credito Imob Prognum" },
-      { value: "29220974", text: "Credito Rural" },
-      { value: "29220976", text: "CRO" },
-      { value: "29220977", text: "Demais de Investimento" },
-      { value: "29220978", text: "Disputas e Recuperacao" },
-      { value: "29220979", text: "E-Financeira" },
-      { value: "29220980", text: "Empresarial Gente" },
-      { value: "29220981", text: "Empresarial RM" },
-      { value: "29220982", text: "Empresarial SISBR" },
-      { value: "29220983", text: "Emprestimo" },
-      { value: "29220984", text: "Link - Agendamentos" },
-      { value: "29220985", text: "Link - Reparos" },
-      { value: "29220986", text: "Migracao" },
-      { value: "29220987", text: "Obrigacoes" },
-      { value: "29221008", text: "Parceiro Plus" },
-      { value: "29220988", text: "Partes Relacionadas" },
-      { value: "29220989", text: "PIX" },
-      { value: "29220990", text: "PLD" },
-      { value: "29220991", text: "Poupanca" },
-      { value: "29220992", text: "Prevencao e Fraude" },
-      { value: "29220993", text: "Previdencia" },
-      { value: "29220994", text: "Recursos Banco" },
-      { value: "29220995", text: "Relatorios Antigos" },
-      { value: "29220996", text: "Repactuacao" },
-      { value: "29220997", text: "Rotinas Contabeis" },
-      { value: "29220998", text: "Seguranca Cibernetica" },
-      { value: "29220999", text: "Seguros" },
-      { value: "29221000", text: "Sicoob Moob" },
-      { value: "29221001", text: "Sicoob TAG" },
-      { value: "29221002", text: "Sipag 1.0" },
-      { value: "29221003", text: "Sipag 2.0" },
-      { value: "29221004", text: "Sisbr Analitico e PAD" },
-      { value: "29221005", text: "Solicitacao Fundo" },
-      { value: "29221006", text: "Transacao de Cartoes" },
-      { value: "29221009", text: "Transferencia Internacional" },
+      { value: "AC", text: "URA Atendimento à Cooperativas" },
+      { value: "31507625", text: "2. SUPER: SANDRA DA CRUZ" },
+      { value: "31507628", text: "2. SUPER: CAROLYNA M. S. PRUDES" },
+      { value: "31507627", text: "2. SUPER: JOÃO MARTINS B. NETO" },
+      { value: "31507626", text: "2. SUPER: LUCIANA SOARES LIMA" },
     ],
   },
 };
@@ -252,13 +192,19 @@ function populateNavigation() {
   });
 }
 
+function confirmRecording() {
+  document.getElementById("recordingModal").style.display = "none";
+  document.getElementById("overlay").style.display = "none";
+}
+
 // Inicialização
 window.onload = function () {
   populateNavigation();
   setupTransfers();
   showOriginSkill();
   handleTransfer();
-
+  document.getElementById("recordingModal").style.display = "block";
+  document.getElementById("overlay").style.display = "block";
   document
     .getElementById("openConfirmation")
     .addEventListener("click", confirmTransfer);
