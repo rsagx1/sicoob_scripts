@@ -101,6 +101,8 @@ const skillConfig = {
     31507628: "2. SUPER: CAROLYNA M. S. PRUDES", 
     31507627: "2. SUPER: JOÃO MARTINS B. NETO", 
     31507626: "2. SUPER: LUCIANA SOARES LIMA", 
+    31507692: "Seguro Prestamista", 
+    31507693: "Gestao De Acesso", 
   },
 
   transferOptions: {
@@ -183,6 +185,8 @@ const skillConfig = {
       { value: "31507628", text: "2. SUPER: CAROLYNA M. S. PRUDES" },
       { value: "31507627", text: "2. SUPER: JOÃO MARTINS B. NETO" },
       { value: "31507626", text: "2. SUPER: LUCIANA SOARES LIMA" },
+      { value: "31507692", text: "Seguro Prestamista" },
+      { value: "31507693", text: "Gestao De Acesso" },
     ],
   },
 };
