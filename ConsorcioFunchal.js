@@ -39,6 +39,7 @@ function populateNavigation() {
 const skillConfig = {
   skills: {
     "20868532": "Consórcio Funchal"
+    "25166174": "Consórcio Funchal teste"
   },
   
   transferOptions: {
