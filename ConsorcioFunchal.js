@@ -133,7 +133,7 @@ window.onload = function() {
   setupTransfers();
   showOriginSkill();
   handleTransfer();
-
+  document.getElementById("recordingModal").style.display = "block";
   document.getElementById('openConfirmation').addEventListener('click', confirmTransfer);
   document.getElementById("btnPesquisa").addEventListener("click", function() {
     this.value = "pesquisa";
