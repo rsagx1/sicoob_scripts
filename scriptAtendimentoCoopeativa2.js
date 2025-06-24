@@ -102,8 +102,7 @@ const skillConfig = {
     31507625: "2. SUPER: SANDRA DA CRUZ", 
     31507628: "2. SUPER: CAROLYNA M. S. PRUDES", 
     31507627: "2. SUPER: JOÃO MARTINS B. NETO", 
-    31507626: "2. SUPER: LUCIANA SOARES LIMA", 
-    25166174: "Teste Sicoob", 
+    31507626: "2. SUPER: LUCIANA SOARES LIMA",
   },
 
   transferOptions: {
@@ -188,7 +187,6 @@ const skillConfig = {
       { value: "31507628", text: "2. SUPER: CAROLYNA M. S. PRUDES" },
       { value: "31507627", text: "2. SUPER: JOÃO MARTINS B. NETO" },
       { value: "31507626", text: "2. SUPER: LUCIANA SOARES LIMA" },
-      { value: "25166174", text: "Teste Sicoob" },
     ],
   },
 };
