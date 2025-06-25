@@ -136,14 +136,6 @@ function confirmTransfer() {
   }
 }
 
-
-function confirmRecording() {
-  document.getElementById("recordingModal").style.display = "none";
-  document.getElementById("overlay").style.display = "none";
-}
-
-
-
 // Inicialização
 window.onload = function() {
   populateNavigation();
