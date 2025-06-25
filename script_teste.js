@@ -136,6 +136,30 @@ function confirmTransfer() {
   }
 }
 
+
+
+// Preencher dropdown de navegação
+function populateNavigation() {
+  const caminho = document.getElementById("Caminho").value.split(";");
+  const select = document.getElementById("navegacaoURA");
+
+  select.innerHTML = "";
+  select.appendChild(createOption("", "Navegação:")).disabled = true;
+
+  caminho.forEach((item) => {
+    const option = createOption(item.trim(), item.trim());
+    option.disabled = true;
+    select.appendChild(option);
+  });
+}
+
+function confirmRecording() {
+  document.getElementById("recordingModal").style.display = "none";
+  document.getElementById("overlay").style.display = "none";
+}
+
+
+
 // Inicialização
 window.onload = function() {
   populateNavigation();
