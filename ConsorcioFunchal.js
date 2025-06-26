@@ -55,10 +55,10 @@ const skillConfig = {
   
   transferOptions: {
     default: [
-      {value: "31507625", text: "2.SUPER: SANDRA DA CRUZ"},
-      {value: "31507626", text: "2.SUPER: LUCIANA SOARES LIMA"},
-      {value: "31507627", text: "2.SUPER: JOAO MARTINS B. NETO"},
-      {value: "31507628", text: "2.SUPER: CAROLYNA M. S. PRUDES"},
+      {value: "31507625", text: "SUPER SANDRA DA CRUZ"},
+      {value: "31507626", text: "SUPER LUCIANA SOARES LIMA"},
+      {value: "31507627", text: "SUPER JOAO MARTINS B. NETO"},
+      {value: "31507628", text: "SUPER CAROLYNA M. S. PRUDES"},
       {value: "PUC", text: "URA PUC"}
     ],
     "25166399": [
@@ -127,13 +127,19 @@ function confirmTransfer() {
   }
 }
 
+function confirmRecording() {
+  document.getElementById("recordingModal").style.display = "none";
+  document.getElementById("overlay").style.display = "none";
+}
+
 // Inicialização
 window.onload = function() {
   populateNavigation();
   setupTransfers();
   showOriginSkill();
   handleTransfer();
-
+  document.getElementById("recordingModal").style.display = "block";
+  document.getElementById("overlay").style.display = "block";
   document.getElementById('openConfirmation').addEventListener('click', confirmTransfer);
   document.getElementById("btnPesquisa").addEventListener("click", function() {
     this.value = "pesquisa";
