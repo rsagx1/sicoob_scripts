@@ -26,7 +26,6 @@ const skillConfig = {
     29221007: "Consorcio Imob Funchal",
     29220975: "Credito Imobiliario Funchal",
     "AC": "URA Atendimento à Cooperativas",
-    29269572: "2. SUPER: TESTE", 
     31507625: "2. SUPER: SANDRA DA CRUZ", 
     31507628: "2. SUPER: CAROLYNA M. S. PRUDES", 
     31507627: "2. SUPER: JOÃO MARTINS B. NETO", 
@@ -42,7 +41,6 @@ const skillConfig = {
       { value: "31507628", text: "2. SUPER: CAROLYNA M. S. PRUDES" },
       { value: "31507627", text: "2. SUPER: JOÃO MARTINS B. NETO" },
       { value: "31507626", text: "2. SUPER: LUCIANA SOARES LIMA" },
-      { value: "29269572", text: "2. SUPER: TESTE" },
     ],
   },
 };
